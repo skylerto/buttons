@@ -1,7 +1,7 @@
 # Sky's Buttons
 
 ## The Buttons
-![Medium Buttons](http://www.gfycat.com/AnyMassiveDamselfly)
+![Medium Buttons](img/medium-buttons.gif)
 
 ##
 
