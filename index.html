@@ -12,26 +12,39 @@
   <!-- Mobile-friendly viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <!-- Style sheet link -->
+  <!-- Style sheet link -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="all">
 	<link href="css/style.css" rel="stylesheet" media="all">
 
 </head>
 <body>
 
-	<header role="banner">
+	<script src="js/bootstrap.min.js"></script>
 
-	<!--		<a class="brand">Buttons</a>
+	<nav class="navbar navbar-default" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><img src="./img/logo.png" alt="Sky's logo"></a>
+		</div>
 
-	 <nav role="navigation">
-			<ul class="navbar">
-				<li><a href="#">Page 1</a></li>
-				<li><a href="#">Page 2</a></li>
-				<li><a href="#">Page 3</a></li>
-				<li><a href="#">Page 4</a></li>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse navbar-ex1-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#" class="navlink">Link</a></li>
+				<li><a href="#" class="navlink">Link</a></li>
+				<li><a href="#" class="profile_image"><img src="img/sophie.JPG" /></a></li>
 			</ul>
-		</nav> -->
+		</div><!-- /.navbar-collapse -->
+	</nav>
 
-	</header>
+
+
 	<main role="main">
 
 		<h2>Sky's Buttons</h2>
@@ -43,11 +56,20 @@
 		<h3>Medium Style, Material Colors (medium-buttons)</h3>
 
     <div class="medium-buttons">
-      <span class="medium-button">New</span>
-      <span class="medium-button">Show</span>
-      <span class="medium-button">Edit</span>
-      <span class="medium-button">Delete</span>
+      <a href="#" class="medium-button">New</a>
+      <a href="#" class="medium-button">Show</a>
+      <a href="#" class="medium-button">Edit</a>
+      <a href="#" class="medium-button">Delete</a>
     </div>
+
+		<h3>Medium Style, Filled</h3>
+
+		<div class="medium-buttons-filled">
+			<a href="#" class="medium-button-filled">New</a>
+			<a href="#" class="medium-button-filled">Show</a>
+			<a href="#" class="medium-button-filled">Edit</a>
+			<a href="#" class="medium-button-filled">Delete</a>
+		</div>
 
 	</main><!-- End primary page content -->
 

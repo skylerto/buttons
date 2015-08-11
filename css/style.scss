@@ -16,37 +16,216 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $title-font;
 }
 
-body {
+main {
   width: 80%;
   margin: 0 auto;
 }
 
 
+/*
+* 1.0 MEDIUM BUTTONS
+*   Styling similar to that of medium.com
+*/
 .medium-buttons {
-
   margin: 2em auto;
 }
 
 .medium-button {
+
   outline: none;
   background: transparent;
-
-    border: 1px solid #33acb7;
-    color: #33acb7;
+  border: 1px solid #33acb7;
+  color: #33acb7;
   padding: 0.5em 1.5em;
   border-radius: 1.5em;
   margin: 0.5em;
-    text-align: center;
+  text-align: center;
+
   &:hover {
     border: 1px solid #607D8B;
     color: #607D8B;
+    text-decoration: none;
     a {
       color: #607D8B !important;
+
+    }
+  }
+}
+
+/*
+* 2.0 MEDIUM BUTTONS FILLED
+*   The negative of MEDIUM BUTTONS (1.0)
+*/
+.medium-buttons-filled {
+  margin: 2em auto;
+}
+
+.medium-button-filled {
+  outline: none;
+  background: transparent;
+  border: 1px solid #33acb7;
+  background-color: #33acb7;
+  color: white;
+  padding: 0.5em 1.5em;
+  border-radius: 1.5em;
+  margin: 0.5em;
+  text-align: center;
+
+  &:hover {
+    color: #607D8B;
+    text-decoration: none;
+    a {
+      color: #607D8B !important;
+
     }
   }
 }
 
 
+/*
+*
+*/
+
 .contentinfo {
   text-align: center;
+}
+
+
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+/***/
+
+.navlink {
+  margin-top: 1em;
+}
+
+.navbar {
+  background-color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+
+  color: #3E4246;
+
+}
+.navbar-brand {
+  margin: 0;
+  padding: 0.2em 0 0 0.5em;
+  img {
+    height: 64px;
+    width: 64px;
+  }
+}
+
+/***/
+
+body {
+  // font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #2a2a2a;
+}
+
+a {
+  text-decoration: none;
+  color: #3E4246;
+  font-weight: 3;
+}
+
+.profile_image {
+img{
+  border-radius: 25px;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  }
+}
+
+
+.header {
+  width: 100%;
+  text-align: left;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+
+.navbar {
+    border-bottom: 1px solid #A6A5A6;
+    height: 75px;
+}
+
+  .brand {
+    float: left;
+    margin: 16px 0;
+    padding: 0 20px;
+  }
+
+
+
+  nav {
+    float: right;
+  }
+
+  li {
+    font-size: 0.8em;
+    display: inline-block;
+    margin-right: -4px;
+    position: relative;
+
+    padding: 0 20px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+
+  li:hover {
+    border-bottom: 1px solid #A6A5A6;
+  }
+
+  li ul {
+    padding: 0;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 150px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transiton: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -transition: opacity 0.2s;
+    background-color: #fff;
+
+    li {
+
+      padding: 15px 20px;
+      display: block;
+      font-size: 1em;
+      color: #fff;
+      border: 1px solid #A6A5A6;
+    }
+    li:hover { color: #1D2021; }
+  }
+  li:hover ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
 }
